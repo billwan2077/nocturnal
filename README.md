@@ -1,5 +1,5 @@
-[![Swift Version](https://img.shields.io/badge/swift-5.0-lightgrey.svg)](https://swift.org/)
-[![macOS Version](https://img.shields.io/badge/macOS->=10.13%20High%20Sierra-lightgrey.svg)](https://support.apple.com/en-us/HT208969)
+[![Swift Version](https://img.shields.io/badge/swift-5-lightgrey.svg)](https://swift.org/)
+[![macOS Version](https://img.shields.io/badge/macOS->=26.0-lightgrey.svg)](https://www.apple.com/macos/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0)
 <p align="center">
   <br>
@@ -14,44 +14,31 @@
 
 Nocturnal is a menu bar app for macOS that allows you to go the extra mile in controlling your display settings to reduce strain on your eyes. It includes darker than dark dimming, Night Shift fine tuning, multi-monitor support, and the ability to turn off Touch Bar on Macbook Pro.
 
+This fork is a modified version of the original GPLv3 project. The original copyright notices and GPLv3 license are preserved, and this fork marks its Apple Silicon/macOS 26 changes in the source history.
+
 <p align="center">
 <img src="Docs/Images/Nocturnal-Screenshot.png" alt="icon" height="350">
 </p>
 
 ### System Requirements
 
-Nocturnal is only supported on macOS High Sierra 10.13 or later, and requires a Mac that supports [Night Shift](https://support.apple.com/en-us/HT207513#requirements). Apple Silicon Macs are not currently supported.
+Nocturnal is now configured for Apple Silicon Macs and macOS 26.0 or later. It requires a Mac that supports [Night Shift](https://support.apple.com/en-us/HT207513#requirements).
 
 ### Installation
 
-To stay up to date install Nocturnal using [Homebrew](https://brew.sh/).
+Download the latest build from this repository's GitHub Releases, or build the app from source with Xcode.
 
-```
-brew install --cask joshjon-nocturnal
-```
-
-Alternatively, you can manually download the latest [release](https://github.com/joshjon/nocturnal/releases).
-
-**Nocturnal is not currently signed with an Apple developer account. To open an unsigned app follow these steps.**
-
-1. Control-click the app icon, then choose Open from the shortcut menu.
-2. A dialog box will appear, then click Open.
-
-For more information refer to the offical [Apple support article](https://support.apple.com/en-au/guide/mac-help/mh40616/mac).
-
-### Donate
-
-Nocturnal will always be free and open source, however, please consider donating if you enjoy using the app.
-
-<a href="https://www.paypal.me/joshuajon/">
-  <img alt="PayPal Donation" src=".github/donate.svg" width="150">
-</a>
+Development builds are signed for local testing. Public distribution builds should be signed with a Developer ID certificate and notarized before being shared broadly.
 
 ### Build and Run
 
-Build Nocturnal's dependencies using carthage and open the project in Xcode.
+Resolve Swift Package Manager dependencies in Xcode, then build MASShortcut with Carthage and open the project.
 
 ```bash
-carthage bootstrap --platform Mac
+XCODE_XCCONFIG_FILE="$PWD/Carthage.xcconfig" carthage bootstrap --platform Mac
 open Nocturnal.xcodeproj
 ```
+
+### License and Source
+
+Nocturnal is distributed under the GNU GPLv3. If you redistribute binaries, provide the corresponding source code and keep the GPLv3 license with the release.

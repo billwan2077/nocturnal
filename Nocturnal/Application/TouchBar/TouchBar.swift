@@ -29,5 +29,5 @@ class TouchBar {
 }
 
 extension NSTouchBarItem.Identifier {
-    static let nocturnalControlStripItem = NSTouchBarItem.Identifier("com.joshua.jon.Nocturnal.controlStrip")
+    static let nocturnalControlStripItem = NSTouchBarItem.Identifier("com.nocturnal.app.controlStrip")
 }

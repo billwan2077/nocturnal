@@ -288,7 +288,7 @@
                                             </textField>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1tA-dk-F5j">
                                                 <rect key="frame" x="-2" y="0.0" width="73" height="14"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 1.1.2" id="LBM-hk-c59">
+                                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Version 2.0.0" id="LBM-hk-c59">
                                                     <font key="font" metaFont="controlContent" size="11"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -302,37 +302,6 @@
                                         </visibilityPriorities>
                                         <customSpacing>
                                             <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                            <real value="3.4028234663852886e+38"/>
-                                        </customSpacing>
-                                    </stackView>
-                                    <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75H-sI-lSv">
-                                        <rect key="frame" x="0.0" y="50" width="289" height="47"/>
-                                        <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1qk-HA-nLV">
-                                                <rect key="frame" x="-2" y="33" width="293" height="14"/>
-                                                <textFieldCell key="cell" alignment="center" title="Please consider donating if you enjoy using Nocturnal." id="m5p-M5-aHD">
-                                                    <font key="font" metaFont="controlContent" size="11"/>
-                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
-                                            <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="Cfk-nx-Hw9">
-                                                <rect key="frame" x="80" y="0.0" width="128" height="25"/>
-                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="donate" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="kQV-IA-uxF">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="donateButtonClicked:" target="1hM-fZ-ccd" id="t6N-Wr-wvP"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <visibilityPriorities>
-                                            <integer value="1000"/>
-                                            <integer value="1000"/>
-                                        </visibilityPriorities>
-                                        <customSpacing>
                                             <real value="3.4028234663852886e+38"/>
                                             <real value="3.4028234663852886e+38"/>
                                         </customSpacing>
@@ -340,41 +309,9 @@
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="4" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-mK-xbo">
                                         <rect key="frame" x="58" y="0.0" width="172" height="31"/>
                                         <subviews>
-                                            <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhm-MU-ZCr" userLabel="Source Control Stack View">
-                                                <rect key="frame" x="0.0" y="17" width="172" height="14"/>
-                                                <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Px-9n-GkV">
-                                                        <rect key="frame" x="-2" y="0.0" width="139" height="14"/>
-                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Source code available on " id="ijv-VM-KUh">
-                                                            <font key="font" metaFont="controlContent" size="11"/>
-                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                    </textField>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="inM-9j-fDp" customClass="HyperlinkTextField" customModule="Nocturnal" customModuleProvider="target">
-                                                        <rect key="frame" x="133" y="0.0" width="41" height="14"/>
-                                                        <textFieldCell key="cell" lineBreakMode="clipping" title="GitHub" id="xn0-6S-UFA">
-                                                            <font key="font" metaFont="controlContent" size="11"/>
-                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                        </textFieldCell>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="href" value="https://github.com/joshjon/nocturnal"/>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                </subviews>
-                                                <visibilityPriorities>
-                                                    <integer value="1000"/>
-                                                    <integer value="1000"/>
-                                                </visibilityPriorities>
-                                                <customSpacing>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                    <real value="3.4028234663852886e+38"/>
-                                                </customSpacing>
-                                            </stackView>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="T1m-Lg-jDf">
-                                                <rect key="frame" x="12" y="0.0" width="148" height="13"/>
-                                                <textFieldCell key="cell" lineBreakMode="clipping" title="Copyright © 2019 Joshua Jon" id="EcE-zc-1hS">
+                                                <rect key="frame" x="17" y="0.0" width="138" height="13"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" title="macOS 26+ Apple Silicon build" id="EcE-zc-1hS">
                                                     <font key="font" metaFont="system" size="10"/>
                                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -1331,6 +1268,5 @@ Gw
     </scenes>
     <resources>
         <image name="AppIconImage" width="64" height="64"/>
-        <image name="donate" width="128" height="25"/>
     </resources>
 </document>
